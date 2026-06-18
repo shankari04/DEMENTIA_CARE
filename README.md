@@ -1,125 +1,128 @@
-# DementiaCare AI
+## AI DEMENTIA CARE WITH MULTIMODAL INTERACTIONS AND SMART REMINDERS
 
-### AI-Powered Cognitive Health Monitoring and Assistance System for Dementia Patients
+### Project Introduction
 
-## Overview
+DementiaCare AI is an AI-driven healthcare platform designed to support dementia patients and their caregivers through intelligent monitoring, cognitive assistance, and safety-focused features.
 
-DementiaCare AI is an intelligent healthcare support system designed to assist dementia patients and their caregivers through AI-powered monitoring, cognitive support, and safety features.
+Dementia affects memory, reasoning, communication, and daily living abilities. Managing these challenges often requires continuous support from family members and healthcare professionals. DementiaCare AI addresses this need by combining Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing into a unified healthcare assistance system.
 
-Dementia is a progressive neurological disorder that affects memory, thinking ability, and daily functioning. This project aims to provide an integrated AI-based solution that supports early risk prediction, patient assistance, caregiver monitoring, and real-time safety tracking.
-
-The system combines machine learning, deep learning, and natural language processing to create a supportive digital companion that improves patient independence while helping caregivers monitor health conditions effectively.
+The platform provides dementia risk assessment, family member recognition, conversational support, cognitive training, medication reminders, and real-time location monitoring to enhance patient well-being and caregiver awareness.
 
 ---
 
-## Key Features
+## Core Functionalities
 
-### 1. Dementia Risk Prediction
+### AI-Based Dementia Assessment
 
-A machine learning model predicts the likelihood and severity stage of dementia using patient symptoms, behavioral attributes, and cognitive assessment scores.
+The system evaluates patient symptoms, behavioral indicators, and cognitive assessment results to estimate dementia risk and severity.
 
-**Algorithm Used:** Random Forest Classifier
+**Technology Used:** Random Forest Classifier
 
-Functions:
+#### Features
 
-* Symptom-based dementia prediction
-* Cognitive assessment evaluation
-* Risk level identification
-* Early detection support
-
----
-
-### 2. Relative Identification (Face Recognition)
-
-A deep learning model identifies familiar individuals using facial recognition to help patients recognize family members and caregivers.
-
-**Algorithm Used:** Convolutional Neural Network (CNN)
-
-Functions:
-
-* Detect faces using webcam
-* Recognize trained family members
-* Display person name and relationship
-* Reduce confusion and anxiety
+- Dementia risk prediction
+- Cognitive health evaluation
+- Symptom analysis
+- Severity level estimation
+- Early intervention support
 
 ---
 
-### 3. AI Chatbot Assistant
+### Family Recognition System
 
-A conversational AI assistant helps patients with guidance, reminders, and health-related queries.
+An AI-powered facial recognition module helps patients identify familiar family members and caregivers.
 
-**Model Used:** Transformer-based BERT-style NLP model
+**Technology Used:** Convolutional Neural Network (CNN)
 
-Functions:
+#### Features
 
-* Natural conversation support
-* Medication information
-* Appointment guidance
-* Daily assistance and emotional support
-
----
-
-### 4. Smart Reminder System
-
-Automated reminders help patients follow daily routines and medical schedules.
-
-Functions:
-
-* Medicine reminders
-* Doctor appointment alerts
-* Activity notifications
+- Face detection through webcam input
+- Relative recognition
+- Relationship identification
+- Familiarity assistance
+- Reduced patient confusion
 
 ---
 
-### 5. Cognitive Training
+### Virtual AI Assistant
 
-Interactive exercises help maintain cognitive ability.
+A conversational AI assistant provides healthcare-related support and guidance through natural language interaction.
 
-Examples:
+**Technology Used:** BERT-Based NLP Model
 
-* Memory games
-* Attention training
-* Cognitive performance tracking
+#### Features
 
----
-
-### 6. Caretaker Dashboard
-
-Caregivers can monitor patient health and activities through a dedicated interface.
-
-Functions:
-
-* View prediction reports
-* Track medication adherence
-* Monitor patient activities
-* View cognitive performance
+- Interactive conversations
+- Medication guidance
+- Appointment assistance
+- Daily activity support
+- General health-related information
 
 ---
 
-### 7. Real-Time Safety Monitoring
+### Smart Reminder Management
 
-The system tracks patient location and detects wandering behavior to improve safety.
+The platform helps patients maintain regular schedules through automated reminders.
 
-Functions:
+#### Features
 
-* Live GPS tracking
-* Geofencing alerts
-* Emergency notifications
+- Medicine reminders
+- Doctor appointment alerts
+- Daily routine notifications
+- Personalized scheduling support
 
 ---
 
-## System Architecture
+### Cognitive Enhancement Activities
 
-The system integrates multiple AI modules:
+Interactive activities are provided to encourage memory retention and mental engagement.
 
-1. Patient enters symptoms and completes cognitive assessment tests
-2. Data is preprocessed and analyzed
-3. Random Forest model predicts dementia risk
-4. CNN model identifies known individuals
-5. AI chatbot processes patient queries
-6. Reminder system manages medicine and appointments
-7. GPS module tracks patient location
-8. Caretaker dashboard displays monitoring information
+#### Features
+
+- Memory exercises
+- Attention improvement tasks
+- Cognitive performance tracking
+- Progress monitoring
+
+---
+
+### Caregiver Monitoring Dashboard
+
+A centralized dashboard allows caregivers to monitor patient health and activities efficiently.
+
+#### Features
+
+- Patient report viewing
+- Activity monitoring
+- Medication adherence tracking
+- Cognitive progress analysis
+- Emergency notifications
+
+---
+
+### Patient Safety and Location Tracking
+
+Real-time tracking features improve patient safety and help caregivers respond quickly during emergencies.
+
+#### Features
+
+- GPS location monitoring
+- Geofencing support
+- Wandering detection
+- Emergency alert generation
+
+---
+
+## System Workflow
+
+1. Patient submits symptoms and assessment information.
+2. Data is processed and analyzed by the prediction model.
+3. Dementia risk level is generated.
+4. Facial recognition identifies registered relatives.
+5. The AI assistant responds to patient queries.
+6. Reminder services manage medications and appointments.
+7. GPS tracking monitors patient location.
+8. Caregivers access reports and alerts through the dashboard.
 
 ---
 
@@ -127,47 +130,49 @@ The system integrates multiple AI modules:
 
 ### Programming Language
 
-* Python 3.x
+- Python 3
 
 ### Machine Learning
 
-* scikit-learn
-* NumPy
-* Pandas
+- Scikit-Learn
+- NumPy
+- Pandas
 
 ### Deep Learning
 
-* TensorFlow
-* Keras
+- TensorFlow
+- Keras
 
 ### Computer Vision
 
-* OpenCV
+- OpenCV
 
 ### Natural Language Processing
 
-* Transformers
-* NLTK / spaCy
+- Transformers
+- NLTK
+- spaCy
 
-### Web Technologies
+### Web Development
 
-* HTML
-* CSS
-* JavaScript
-* Flask (Python Web Framework)
+- Flask
+- HTML
+- CSS
+- JavaScript
+
+### Database
+
+- MySQL
 
 ### APIs
 
-* Google Maps API (optional for GPS tracking)
+- Google Maps API (Optional)
 
 ---
 
 ## Project Structure
 
-```
-## Project Structure
-
-
+```text
 dementiacare-ai/
 │
 ├── app.py
@@ -186,15 +191,14 @@ dementiacare-ai/
 │   ├── index.html
 │   ├── login.html
 │   ├── dashboard.html
-│   └── other HTML pages
+│   └── additional HTML files
 │
 ├── static/
 │   ├── assets/
 │   │   ├── css/
 │   │   ├── js/
-│   │   ├── lib/
-│   │   ├── scss/
-│   │   └── images/
+│   │   ├── images/
+│   │   └── libraries/
 │   │
 │   ├── accuracy_plot.png
 │   ├── feature_importance.png
@@ -202,7 +206,7 @@ dementiacare-ai/
 │
 ├── dataset/
 │   └── relatives/
-│       └── training images for face recognition
+│       └── Training images
 │
 ├── database/
 │   └── dementia_care.sql
@@ -210,65 +214,91 @@ dementiacare-ai/
 └── README.md
 ```
 
-
-
 ---
 
-## Actors of the System
+## Users of the System
 
 ### Dementia Patient
 
-* Enters symptoms
-* Receives predictions
-* Uses chatbot assistance
-* Plays cognitive games
-* Receives reminders
+- Receives dementia assessment results
+- Uses chatbot assistance
+- Participates in cognitive exercises
+- Receives reminders and notifications
 
-### Caretaker
+### Caregiver
 
-* Manages patient profile
-* Tracks location and activity
-* Receives alerts
-* Monitors health reports
+- Monitors patient activities
+- Tracks patient location
+- Receives emergency alerts
+- Reviews health reports
 
-### Doctor / Medical Professional
+### Healthcare Professional
 
-* Reviews patient data
-* Validates prediction results
-* Updates treatment plans
+- Reviews patient information
+- Validates assessment outcomes
+- Monitors patient progress
+- Supports treatment planning
 
-### System Administrator
+### Administrator
 
-* Maintains database
-* Manages system security
-* Updates AI models
-
----
-
-## Future Improvements
-
-* Mobile application integration
-* Wearable device support
-* Voice-based interaction
-* Advanced clinical decision support
-* Real-time health sensor integration
+- Maintains the system
+- Updates AI models
+- Manages database operations
+- Ensures platform security
 
 ---
 
-## Purpose of the Project
+## Future Enhancements
 
-The goal of this project is to demonstrate how artificial intelligence can assist in improving the quality of life for dementia patients while reducing the burden on caregivers through intelligent monitoring and assistance systems.
+- Mobile application support
+- Voice-enabled interactions
+- Wearable device integration
+- Cloud deployment
+- Multilingual chatbot support
+- Advanced healthcare analytics
+- Real-time health sensor integration
 
 ---
+
+## Project Objective
+
+The primary objective of DementiaCare AI is to demonstrate the practical application of Artificial Intelligence in dementia care. The platform aims to improve patient independence, support caregivers with meaningful insights, and promote safer healthcare management through intelligent technologies.
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/DEMENTIA_CARE.git
+```
+
+### Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Application
+
+```bash
+python app.py
+```
+
+---
+
+
+
 
 ## Author
 
-**Sudalaimuthumari M**
+### Sree Shankari V
+
 B.Tech – Artificial Intelligence and Data Science
-Francis Xavier Engineering College
 
 ---
 
 ## License
 
-This project is created for academic and research purposes.
+This project is intended for academic and research use.
